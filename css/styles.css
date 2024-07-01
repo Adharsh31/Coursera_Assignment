@@ -1,1 +1,104 @@
+/* Universal selector*/
+*{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Heading style*/
+h1{
+    text-align: center;
+    font-weight: bold;
+    color: maroon;
+    margin-bottom: 60px;
+}
 
+/*Box style*/
+.row>div {
+    background-color: rgb(232, 229, 229);
+    border: 1px solid black;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  
+}
+
+/*Box heading style*/
+h2{
+
+    text-align: center;
+    font-size: 21px;
+    border: 1px solid black;
+    
+    width: 30%; 
+    margin: 0px;                /*aligning the heading box to the div box*/
+    padding-right: 5px;
+    position: relative;
+    left: 70%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+
+}
+
+#title_box_1{
+  background-color: rgb(224, 10, 10);
+}
+#title_box_2{
+  background-color: rgb(72, 13, 209);
+}
+.title_box_3{
+  background-color: rgb(3, 75, 72);
+}
+
+/*content style*/
+p{
+  padding: 10px;    
+  color: #2e0202;
+
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+    width: 100%;
+  }
+
+
+/*Large devices 
+dividing the screen into four equal column spaces, placing three boxes in three spaces and dividing the one 
+column for the margin for the other boxes
+*/
+
+@media (min-width: 992px) {
+  .col-lg-3{
+      float: left;
+      width: 25%;       
+      margin-right: 4.16%;
+      margin-left: 4.16%;
+  }
+
+}
+
+/* medium devices 
+maintaining the same space for margin and dividing the rest of the space to the boxes
+and 
+*/
+@media (min-width: 768px) and (max-width: 991px ){
+  .col-md-2{
+    float: left;
+    width: 37.5%;
+    margin-right: 4.16%;
+    margin-left: 4.16%;
+  }
+  .col-md-1{
+    float:left;
+    width: 83.2%;
+    margin-right: 4.16%;
+    margin-left: 4.16%;
+
+  }
+  /* tablet class for the heading box in tablet view to maintain similar size to the other boxes*/
+  .tablet{
+    width: 14%;
+    left: 86%;
+  }
+}
